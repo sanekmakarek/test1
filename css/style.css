@@ -1,0 +1,28 @@
+section#header {
+	height: 568px;
+	background: url(../img/bg-header.jpg) no-repeat center top;
+}
+.logo {
+	padding-top: 40px;
+}
+.textcenter h1 {
+	padding-top: 291px;
+	color: #fff;
+	font-family: 'Roboto';
+	font-size: 42px;
+}
+.phone h2{
+	padding-top: 162px;
+	color: #fff;
+	font-family: 'Roboto';
+	font-size: 51px;
+}
+.phone p{
+	padding-top: 61px;
+	color: #fff;
+	font-family: 'Roboto';
+	font-size: 20px;
+}
+#mail {
+	text-decoration: underline;
+}
