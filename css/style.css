@@ -1,3 +1,59 @@
+/*Шрифты*/
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url('fonts/MyriadProBold.eot');
+    src: url('fonts/MyriadProBold.eot') format('embedded-opentype'),
+         url('fonts/MyriadProBold.woff2') format('woff2'),
+         url('fonts/MyriadProBold.woff') format('woff'),
+         url('fonts/MyriadProBold.ttf') format('truetype'),
+         url('fonts/MyriadProBold.svg#MyriadProBold') format('svg');
+}
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/robotobold.eot');
+    src: url('fonts/robotobold.eot') format('embedded-opentype'),
+         url('fonts/robotobold.woff2') format('woff2'),
+         url('fonts/robotobold.woff') format('woff'),
+         url('fonts/robotobold.ttf') format('truetype'),
+         url('fonts/robotobold.svg#robotobold') format('svg');
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/robotoregular.eot');
+    src: url('fonts/robotoregular.eot') format('embedded-opentype'),
+         url('fonts/robotoregular.woff2') format('woff2'),
+         url('fonts/robotoregular.woff') format('woff'),
+         url('fonts/robotoregular.ttf') format('truetype'),
+         url('fonts/robotoregular.svg#robotoregular') format('svg');
+}
+@font-face {
+    font-family: 'opensansl';
+    src: url('fonts/opensansl.eot');
+    src: url('fonts/opensansl.eot') format('embedded-opentype'),
+         url('fonts/opensansl.woff2') format('woff2'),
+         url('fonts/opensansl.woff') format('woff'),
+         url('fonts/opensansl.ttf') format('truetype'),
+         url('fonts/opensansl.svg#opensansl') format('svg');
+}
+@font-face {
+    font-family: 'opensansr';
+    src: url('fonts/opensansr.eot');
+    src: url('fonts/opensansr.eot') format('embedded-opentype'),
+         url('fonts/opensansr.woff2') format('woff2'),
+         url('fonts/opensansr.woff') format('woff'),
+         url('fonts/opensansr.ttf') format('truetype'),
+         url('fonts/opensansr.svg#opensansr') format('svg');
+}
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('fonts/MyriadProRegular.eot');
+    src: url('fonts/MyriadProRegular.eot') format('embedded-opentype'),
+         url('fonts/MyriadProRegular.woff2') format('woff2'),
+         url('fonts/MyriadProRegular.woff') format('woff'),
+         url('fonts/MyriadProRegular.ttf') format('truetype'),
+         url('fonts/MyriadProRegular.svg#MyriadProRegular') format('svg');
+}
+/*Шапка*/
 section#header {
 	height: 568px;
 	background: url(../img/bg-header.jpg) no-repeat center top;
@@ -8,21 +64,215 @@ section#header {
 .textcenter h1 {
 	padding-top: 291px;
 	color: #fff;
-	font-family: 'Roboto';
-	font-size: 42px;
+	font-size: 36px;
+	font-family: 'robotoregular';
+	text-transform: uppercase;
 }
 .phone h2{
 	padding-top: 162px;
 	color: #fff;
-	font-family: 'Roboto';
+	font-family: 'robotobold';
 	font-size: 51px;
 }
 .phone p{
 	padding-top: 61px;
 	color: #fff;
-	font-family: 'Roboto';
+	font-family: 'robotoregular';
 	font-size: 20px;
 }
 #mail {
 	text-decoration: underline;
+}
+/*Навигация*/
+ul.list-inline a {
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 0px 58px 0px;
+	color: #fff;
+	font-family: 'MyriadProBold';
+}
+ul.list-inline a:hover {
+	text-decoration: none;
+	border-bottom: 5px solid #fff;
+}
+ul.list-inline {
+	font-size: 30px;
+	text-align: center;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	padding-top: 80px;
+}
+/*Полоса*/
+section#polosa {
+	height: 356px;
+	background: url(../img/bg-polosa.jpg) no-repeat center top;
+}
+.polosa {
+	margin-top: 40px;
+}
+.polosa p {
+	margin-top: 45px;
+	text-align: center;
+	font-family: 'robotoregular';
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+}
+/*Главная*/
+section#main {
+	height: 632px;
+	background-color: #ffffff;
+}
+.lefttext {
+	font-family: 'opensansr';
+	font-size: 18px;
+}
+.lefttext h2 {
+	font-family: 'robotoregular';
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #422222;
+	margin-top: 63px;
+}
+.lefttext hr {
+	border: none;
+    background-color: #97b5f2; 
+    height: 3px; 
+	width: 251px;
+	margin-left: 0px;
+}
+/*Навигация главная*/
+.righttext ul {
+	font-size: 18px;
+	font-family: 'opensansl';
+}
+.righttext {
+	width: 390px;
+	margin-top: 55px;
+}
+/*Форма*/
+section#form {
+	background: url(../img/bg-form.jpg) no-repeat center top;
+	height: 500px;
+}
+.header-form h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'robotobold';
+	margin-top: 55px;
+}
+.header-form hr {
+	border: none;
+    background-color: #97b5f2; 
+    height: 3px; 
+	width: 253px;
+	margin-top: 0px;
+}
+.form {
+	background-color: #fff;	
+	padding-top: 42px;
+	height: 310px;
+}
+.form input {
+	padding: 10px;
+	border: none;
+	border-bottom: 3px solid black;
+	width: 100%;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'robotobold';
+}
+input:hover {
+	border-bottom: 3px solid #97b5f2;
+}
+input:focus{
+	border-bottom: 3px solid #97b5f2;
+	outline: none;
+}
+.form-btn {
+	padding: 10px;
+	margin-top: 29px;
+	width: 164px;
+	font-family: 'MyriadProBold';
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	background-color: #6495ed;
+	margin-bottom: 20px;
+}
+.form textarea {
+	border: none;
+	padding: 10px;
+	border-bottom: 3px solid black;
+	width: 100%;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'robotobold';
+	margin-top: 50px;
+	resize: none;
+}
+textarea:hover {
+	border-bottom: 3px solid #97b5f2;
+}
+textarea:focus {
+	border-bottom: 3px solid #97b5f2;
+	outline: none;
+}
+/*Cлайды*/
+section#slider {
+	height: 500px;
+}
+.ccontent h3 {
+	text-align: center;
+	font-size: 24px;
+	font-family: 'MyriadProRegular';
+} 
+.ccontent p {
+	font-size: 18px;
+	font-family: 'opensansr';
+	text-align: left;
+}
+#myCarousel {
+	height: 481px;
+	margin: 40px;
+}
+.uk {
+	width: 5%;
+}
+.glyphicon {
+	color: #97b5f2;
+	width: 5%;
+}
+.carousel-indicators li{
+	background-color: #888888;
+	padding: 10px;
+	margin: 0px 10px;
+	border-radius: 20px 20px 20px 20px;
+}
+.carousel-indicators .active{
+	background-color: #97b5f2;
+	margin: 0px 10px;
+}
+#slider a{
+	background-image: linear-gradient(to top,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 0%);
+}
+/*Отзывы*/
+#reviews .container{
+	padding-left: 0px;
+	background-color: #f9f9f9;
+}
+#reviews h2 {
+	font-family: 'robotobold';
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #422222;
+	text-align: center;
+}
+#reviews hr {
+	border: none;
+    background-color: #97b5f2; 
+    height: 3px; 
+	width: 251px;
 }
